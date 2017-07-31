@@ -6,6 +6,12 @@
 </head>
 <body>
 <h1>Welcome to the topic Voter!</h1>
+<form action="/createTopic" method="post">
+    <input type="text" name="title" required="required"/>
+    <input type="text" name="description"/>
+    <input type="text" name="submit" value="Add"/>
+</form>
+
 <ul>
     <li th:each="topic : ${topics}">
         <span th:text="${topic.title}"></span>
