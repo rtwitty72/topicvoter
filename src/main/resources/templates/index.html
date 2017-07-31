@@ -17,6 +17,9 @@
         <span th:text="${topic.title}"></span>
         :
         <span th:text="${topic.description}"></span>
+        <input type="hidden" th:value="${topic.id}" name="id"/>
+        <form action="/deleteTopic" method="post"></form>
+        <input type="submit" value="X"/>
     </li>
 </ul>
 
